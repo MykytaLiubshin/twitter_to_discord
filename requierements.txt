@@ -1,0 +1,12 @@
+tqdm
+seaborn
+wheel
+black
+sqlalchemy
+selenium
+fake_useragent
+webdriver_manager
+aiohttp
+asyncpg
+asyncio
+sqlalchemy-utils
