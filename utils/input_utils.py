@@ -1,5 +1,5 @@
 from selenium import webdriver
-from utils.constants import waits
+from constants import waits
 
 
 def human_type(driver, elem, text):

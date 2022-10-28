@@ -1,4 +1,9 @@
 
+TWITTER_LINK = "https://twitter.com"
+MIRRA = "/mirraqpow"
+MIRRA_TWITTER = TWITTER_LINK + MIRRA
+
+
 waits = {
     "long": {
         "std": 20,
