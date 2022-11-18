@@ -1,18 +1,12 @@
-import os
-
-from webdriver_manager.chrome import ChromeDriverManager
-from selenium import webdriver
-from selenium.webdriver.support.ui import WebDriverWait
-from selenium.webdriver.support import expected_conditions as EC
-from selenium.webdriver.common.by import By
-from time import sleep
-
-from utils.input_utils import human_type
+from asyncio import get_event_loop
 from utils.get_driver import get_driver
 from utils.sql_util import initialize
-
+from data_gather.twitter_update_checker import go_to_twitter_page
 def run():
-    initialize()
+    event_loop = get_event_loop()
+    driver = get_driver()
+    go_to_twitter_page(driver)
+
     # with get_driver() as  driver:
     #     driver.get(NEW_LINK)
         

@@ -12,8 +12,7 @@ PATH_TO_CHROME = os.path.join('/', 'home', 'mykyta',  '.config', 'google-chrome'
 def get_driver():
     ua = UserAgent()
 
-    options = Options()
-
     options = webdriver.ChromeOptions()
+    options.add_argument("start-maximized")
     driver = webdriver.Chrome(ChromeDriverManager().install(), chrome_options=options)
     return driver

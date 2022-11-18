@@ -19,7 +19,7 @@ waits = {
     },
     "fast": {
         "std": 5,
-        "interval": [1, 5],
+        "interval": [2, 5],
         "type": [0.05, 0.2],
         "mw": 3,
     },
